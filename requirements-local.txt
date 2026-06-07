@@ -1,0 +1,5 @@
+# Lightweight local-only dependencies (Windows/MSYS2 compatible)
+# For full deployment, use requirements.txt on JarvisLabs Ubuntu
+Django>=5.0
+channels>=4.0.0
+python-decouple>=3.8

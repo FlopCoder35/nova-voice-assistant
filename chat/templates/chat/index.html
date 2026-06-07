@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'chat/css/style.css' %}">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <h1>Nova Voice</h1>
+            <p class="subtitle">Next-gen conversational AI</p>
+        </header>
+
+        <main class="interaction-area">
+            <div class="orb-container">
+                <div class="orb" id="orb"></div>
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+            </div>
+
+            <div class="status-panel">
+                <p id="status-text">Ready to connect</p>
+                <div class="server-messages" id="server-messages">
+                    <p class="message-placeholder">Waiting for server messages...</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="btn btn-primary">
+                    <span class="icon">🎙️</span>
+                    Start Conversation
+                </button>
+                <button id="stop-btn" class="btn btn-danger" disabled>
+                    <span class="icon">⏹️</span>
+                    Stop
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="{% static 'chat/js/main.js' %}"></script>
+</body>
+</html>
